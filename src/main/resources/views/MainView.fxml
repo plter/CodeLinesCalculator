@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Label?>
+<VBox fx:id="rootContainer"
+      style="-fx-padding: 5px;-fx-spacing: 3px;-fx-alignment: TOP_CENTER;-fx-font-size: 12pt;"
+      xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plter.clc.controllers.MainViewController">
+
+    <HBox style="-fx-spacing: 3px;-fx-alignment: center;">
+        <Label text="包含的文件扩展名"/>
+        <TextField HBox.hgrow="ALWAYS" fx:id="tfFileExts" text=".py;.js;.html;.cpp;.ts;.c;.php;.java;.kt"/>
+    </HBox>
+
+    <HBox style="-fx-spacing: 3px">
+        <TextField fx:id="tfDirPath" HBox.hgrow="ALWAYS" editable="false" style="width: 100%;"/>
+        <Button onAction="#btnSelectDirClicked" text="选择目录"/>
+        <Button text="开始计算" onAction="#startCalculate"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS"/>
+    <Label fx:id="labelCurrentFile" style="-fx-font-size: 10pt;"/>
+    <Label fx:id="labelTotalLine" style="-fx-font-size: 30pt;"/>
+    <HBox VBox.vgrow="ALWAYS"/>
+</VBox>
