@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("代码行数统计工具");
         primaryStage.setScene(new Scene(ViewTool.INSTANCE.loadView("views/MainView.fxml"), 720, 220));
         primaryStage.show();

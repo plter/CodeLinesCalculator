@@ -3,7 +3,6 @@ package com.plter.clc.controllers;
 import com.plter.clc.reader.CalculateTool;
 import com.plter.clc.reader.IReaderCallback;
 import javafx.event.ActionEvent;
-import javafx.geometry.Pos;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
