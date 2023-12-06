@@ -1,2 +1,0 @@
-# CodeLinesCalculator
-计算指定目录中指定扩展名所有文件内容的行数

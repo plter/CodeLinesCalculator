@@ -24,7 +24,7 @@ object CalculateTool {
 
         running = true
 
-        extsList = exts.toLowerCase().split(";")
+        extsList = exts.lowercase().split(";")
         GlobalScope.launch {
             totalLines = 0
             readDir(rootDir)
@@ -42,7 +42,7 @@ object CalculateTool {
                 readDir(file)
             } else if (file.isFile) {
                 extsList?.forEach extNameLoop@{ ext ->
-                    if (file.name.toLowerCase().endsWith(ext)) {
+                    if (file.name.lowercase().endsWith(ext)) {
                         val currentLines = readFileLines(file)
                         totalLines += currentLines
                         Platform.runLater {

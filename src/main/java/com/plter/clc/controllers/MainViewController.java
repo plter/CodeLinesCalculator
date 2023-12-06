@@ -9,7 +9,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
-import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 
@@ -57,7 +56,7 @@ public class MainViewController {
             }
 
             @Override
-            public void onProgress(@NotNull File currentFile, int currentLines, int linesTotal) {
+            public void onProgress(File currentFile, int currentLines, int linesTotal) {
                 labelCurrentFile.setText(currentFile.getAbsolutePath());
                 labelTotalLine.setText("总行数：" + linesTotal);
             }
